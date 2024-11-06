@@ -1,11 +1,6 @@
 #include "TeamPlayer.h"
 #include <iostream>
 
-// Konstruktor
-TeamPlayer::TeamPlayer(const std::string &id, const std::string &name, int age, const std::string &position, int games, int goals)
-    : player_id(id), name(name), age(age), position(position), games_played(games), scored_goals(goals) {}
-
-// Ökar antalet spelade matcher med ett
 void TeamPlayer::addGamePlayed()
 {
     games_played++;

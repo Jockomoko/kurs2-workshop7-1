@@ -8,8 +8,8 @@ int main()
     Team myTeam("The Mighty Eagles");
 
     // Skapa och lägg till två spelare till laget
-    TeamPlayer player1("P001", "Alice Smith", 24, "Forward");
-    TeamPlayer player2("P002", "Bob Johnson", 28, "Goalkeeper");
+    TeamPlayer player1("P001", "John BoBsson", 15, "Strikerrr", 0, 0);
+    TeamPlayer player2("P002", "Bob Johnson", 28, "Goalkeeper", 0, 0);
 
     myTeam.addPlayer(player1);
     myTeam.addPlayer(player2);
@@ -19,7 +19,7 @@ int main()
     myTeam.updatePlayerStats("P002", true, 1); // Öka spelade matcher och lägg till 1 mål för Bob
 
     // Lägg till ytterligare en spelare
-    TeamPlayer player3("P003", "Charlie Brown", 22, "Defender");
+    TeamPlayer player3("P003", "Charlie Brown", 22, "Defender", 0, 0);
     myTeam.addPlayer(player3);
 
     // Skriv ut info om den nya spelaren

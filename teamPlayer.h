@@ -14,7 +14,15 @@ private:
     int scored_goals; // Ny variabel för antal mål
 
 public:
-    TeamPlayer(const std::string &id, const std::string &name, int age, const std::string &position, int games = 0, int goals = 0);
+    TeamPlayer(std::string player_id, std::string name, int age, std::string position, int games_played, int scored_goals)
+    {
+        this->player_id = player_id;
+        this->name = name;
+        this->age = age;
+        this->position = position;
+        this->games_played = games_played;
+        this->scored_goals = scored_goals;
+    }
 
     void addGamePlayed();
     void resetGamesPlayed();
